@@ -14,7 +14,7 @@ RUN wget https://www.dropbox.com/s/uxk5fcf20xj1z5l/GEM-binaries-Linux-x86_64-cor
 	tar xjf /usr/local/src/GEM-binaries-Linux-x86_64-core_i3-20130406-045632.tbz2 && \
 	mv /GEM-binaries-Linux-x86_64-core_i3-20130406-045632 /usr/local/src/
 
-COPY gem_wrapper.sh /usr/local/src/GEM-binaries-Linux-x86_64-core_i3-20130406-045632/bin/run_gem.sh
+COPY run_gem.sh /usr/local/src/GEM-binaries-Linux-x86_64-core_i3-20130406-045632/bin/run_gem.sh
 RUN chmod +x /usr/local/src/GEM-binaries-Linux-x86_64-core_i3-20130406-045632/bin/run_gem.sh
 
 RUN cp -r /usr/local/src/GEM-binaries-Linux-x86_64-core_i3-20130406-045632/bin/* /usr/local/bin/
